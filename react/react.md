@@ -23,9 +23,13 @@ Vite é usadado para criar booleplate das nossas aplicações webs sem a necessi
 
 Escrever códigos imperativo é focado em como chegar no resultado, pegar o elemento, adicionar o evento de click, adicionar um estilo, tudo isso é uma forma imperativa de como chegar no objetivo final
 
+**Compre Leite: Abre a porta, vá até o mercado, escolha o leite mais barato, pegue a fila, pague, ponha na sacola,volte para casa, abre a porta, guarda na geladeira**
+
 - Declarativo
 
 Já a forma declarativa é focado em o que queremos, como por exemplo quando damos vida a um tag com o css (declara o resultado e fim)
+
+**Compre Leite: Por favor, compre leite**
 
 ## Componentes
 
@@ -76,6 +80,45 @@ function Hello () { // un componente es una función! 👀
 
 function Hello () {
   return <h1>Hola Mundo 👋🌍!</h1>
+}
+
+```
+
+## Props
+
+- Pros são propriedades de um componentes
+- Com os props entra o "poder" dos componentes que é a sua reutilização
+
+```js:
+//componentes
+
+export function Button(props){
+
+  return (
+
+<button>{props.texto}</button>
+
+  )
+
+}
+
+
+```
+
+No exemplo acima criamos um componente de botão, ao invez de passar o valor direto no componentes, criamos uma props.texto que vai servir para que quando usarmos esse componentes possamos setar o texto que quisermos e quantas vezes quiser, sem a necessidade de ter botões com valores diferentes.
+
+```js:
+//utilizando o componentes
+
+function App() {
+  return (
+<>
+      <Button texto="Aqui tem um texto do props" />
+      <Button texto="Aqui tem um texto do props" />
+
+</>
+  )
+
 }
 
 ```

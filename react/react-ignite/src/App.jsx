@@ -1,7 +1,11 @@
-import { Autores } from "./List";
+import { Post } from "./Post";
 
 function App() {
-  return <Autores />;
+  return (
+    <>
+      <Post />
+    </>
+  );
 }
 
 export default App;
