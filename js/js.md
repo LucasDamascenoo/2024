@@ -166,3 +166,7 @@ const encontre = pedidos.find((pedido) => {
 ```
 
 **Caso a condição contemple + de um valor do array, vai trazer somente o primeiro (de cima para baixo)**
+
+# LocalStorage
+
+LocalStorage é uma maneira de guarda dados no navegador (diferente do session storage) os dados persistem até que sejam apagados
