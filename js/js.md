@@ -170,3 +170,19 @@ const encontre = pedidos.find((pedido) => {
 # LocalStorage
 
 LocalStorage é uma maneira de guarda dados no navegador (diferente do session storage) os dados persistem até que sejam apagados
+
+- Só armazena Strings
+- Use JSON.stringify para guardar um objeto/array em localStorage
+
+## Sintax
+
+LocalStorage precisa de 2 parametros (o nome e o valor)
+
+```js:
+
+localStorage.setItem('nome','Lucas');
+
+
+```
+
+**Para ver esses dados guardados no navegador precisamos ir em:Aplication >Storage**
