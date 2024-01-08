@@ -173,6 +173,7 @@ LocalStorage é uma maneira de guarda dados no navegador (diferente do session s
 
 - Só armazena Strings
 - Use JSON.stringify para guardar um objeto/array em localStorage
+- Usa um conjunto de chaves/valor
 
 ## Sintax
 
