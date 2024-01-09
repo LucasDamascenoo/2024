@@ -187,3 +187,26 @@ localStorage.setItem('nome','Lucas');
 ```
 
 **Para ver esses dados guardados no navegador precisamos ir em:Aplication >Storage**
+
+## Obtendo dados do LocalStorage
+
+```js:
+
+nome = localStorage.getItem(nome)
+
+
+```
+
+- Caso o dado não exista retorna null
+- JSON.parse transforma uma string em um array/objeto
+
+## Como eliminar dados do LocalStorage
+
+```js:
+
+
+
+const deletaNome = localStorage.removeItem(nome)
+const limpaTudo = localStorage.clear()
+
+```
