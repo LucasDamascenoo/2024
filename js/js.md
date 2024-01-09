@@ -210,3 +210,9 @@ const deletaNome = localStorage.removeItem(nome)
 const limpaTudo = localStorage.clear()
 
 ```
+
+# DOM
+
+Dom (document object model) é uma api web que nos permite manipular a estrutura HTML (é uma hierarquia em "forma" de arvore)
+
+# Trabalhando com Apis
