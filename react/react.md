@@ -122,3 +122,11 @@ function App() {
 }
 
 ```
+
+## Vida de um componentes
+
+quando criamos componentes queremos que ele seja util, ou seja, continuemos usando e atualizando os dados em toda a nossa aplicação, por esse "motivo" temos o ciclo de vida de um componentes que consiste em:
+
+- Montagem
+- Atualização
+- Desmontagem/destruição
