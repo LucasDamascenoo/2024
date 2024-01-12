@@ -2,20 +2,31 @@
 
 React é uma biblioteca js utilizada para criar interfaces interativas para o usuario (não necessariamente apenas web).
 
-- web
-- mobile
+- web (react-dom)
+- mobile (react-native)
 - tv
 - realidade virtual
+
+## Roadmap de aprendizado
+
+- Core of react
+- Reutilização de componentes (props)
+- Como propagar mudanças (hooks)
+- State managent (react n possue) redux,redux tookit,content api
+- Class component (legacy)
+- Baas Apps (ecom app, social midia)
+
+- Frameworks (apos masterizar react) Next,Gastby,Remix
+
+## Vite
+
+Vite é bundler usadado para criar booleplate das nossas aplicações webs sem a necessidade de um compilador como webpack.
 
 ## O que é são patterns de redenrização: ?
 
 - SSR: É o conceito de carregar as informações que o Browser (Usuario) solicita apenas quando o server processa toda a informação e todo o frontend(html,css,js) e só depois de ter tudo carregado trás as infos/tela pro usuario.
 
 - SPA: Nesse conceito, o Browser(Usuario) solicita algo, o servidor não é mais responsavel de carregar o todo o Frontend(html,css,js), o servidor só retorna os dados solicitados (Json).
-
-## Vite
-
-Vite é usadado para criar booleplate das nossas aplicações webs sem a necessidade de um compilador como webpack.
 
 ## Imperativo vs Declarativo
 
@@ -128,5 +139,5 @@ function App() {
 quando criamos componentes queremos que ele seja util, ou seja, continuemos usando e atualizando os dados em toda a nossa aplicação, por esse "motivo" temos o ciclo de vida de um componentes que consiste em:
 
 - Montagem
-- Atualização
 - Desmontagem/destruição
+- Atualização

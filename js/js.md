@@ -211,8 +211,47 @@ const limpaTudo = localStorage.clear()
 
 ```
 
-# DOM
+# Datas
 
-Dom (document object model) é uma api web que nos permite manipular a estrutura HTML (é uma hierarquia em "forma" de arvore)
+Podemos trabalhar com datas utilizando o objeto date().
+
+- new Date()
+
+- método get:
+
+usando o get como por exemplo :
+
+```js:
+
+const hj = new Date();
+
+const ano = hoje.getYear();
+
+// 2024
+
+
+```
+
+- método set
+
+Já com o set podemos modificar dados de datas
+
+- dayJs
+
+[dayJs](https://day.js.org/) é uma biblioteca que nos ajuda a trabalharmos com datas no Javascript
+
+# Bugs e Debugs
+
+- "Bugs" são erros em nossas aplicações que atrapalham uma funcionalidade ou causam um erro inesperado.
+
+- "Debugs" é o aposto, é procurar/investigar o código para evitar problemas e erros.
+
+##
+
+# Js Assincrono
+
+- Js por padrão é sincrono ou seja, executa linha após linha onde aguarda a linha anterior para dar sequencia nas demais ( ou seja, se a lista 1 do código estiver sem erro e a 2 com, a 3 em diante não sera exibida/executada)
+
+-
 
 # Trabalhando com Apis
