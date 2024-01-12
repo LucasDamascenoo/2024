@@ -44,15 +44,17 @@ Já a forma declarativa é focado em o que queremos, como por exemplo quando dam
 
 ## Componentes
 
-Componentes são pequenas partes, ou seja, dividmos a nossa aplicação em pedaços, que podem ser reutilizadas e repetidas diversas vezes em nossas aplicações
+Componentes são pequenas partes, ou seja, dividmos a nossa aplicação em pedaços, que podem ser reutilizadas e repetidas diversas vezes em nossas aplicações, quando pensamos em reutilizacao de codigo, no HTML nao temos essa opcao, ja no css podemos considerar as classes e no Js as funcoes().
 
-- Componentes são funções que retorna HTML
+- Componentes são funções/classes que retorna HTML
 
-- Todos os componentes precisam ter .jsx (javascript + xml)
+- Os componentes precisam ou nao ter .jsx/.js (javascript + xml)
 
 - Componentes só podem ser repetidos caso tenha um elemento em volta(pai/container)
 
 - Componentes devem ser escrito com a primeira Letra maiscula para que não tenhamos confusão com tags html: footer - Footer
+
+**No react tbm temos os hooks que nos permite reutilizar a logica**
 
 ## Formas de exportar Componentes
 
@@ -95,6 +97,10 @@ function Hello () {
 
 ```
 
+**Obs: os mecanismo do Javascript nao sao capazes de interpretar o jsx, por isso precisamos de compiladores como (babel) para transformar nosso codigo jsx em algo que o navegador intenda**
+
+**Obs2: Hoje nao necessita quer os arquivos em react tenham a extensao .jsx pois o mecanismo do js ja intende que o jsx e a sintaxe nao a extensao**
+
 ## Props
 
 - Pros são propriedades de um componentes
@@ -131,6 +137,16 @@ function App() {
   )
 
 }
+
+```
+
+**Desestruturacao em props**
+
+- Tambem podemos usar uma sintaxe 'moderna' e mais clean para criarmos propriedades desestruturada
+
+```js:
+
+
 
 ```
 
