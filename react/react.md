@@ -157,3 +157,36 @@ quando criamos componentes queremos que ele seja util, ou seja, continuemos usan
 - Montagem
 - Desmontagem/destruição
 - Atualização
+
+## Como conectamos Front com o Back?
+
+O frontend conecta com o backend atraves de requisicoes/chamadas HTTP
+
+- request(front) e retorna uma response(backend)
+
+**Exemplos**
+
+- Frontend > Resquet > Backend > Frontend: response: 200
+- Frontend > Post{Task} > Backend > Frontend: response: 201
+
+### Tipos de requicisoes
+
+- GET: Recuperar dados
+- POST: Criar dados
+- PUT:Atualizar dados
+- DELETE:Deletar os dados
+
+### Status Code
+
+Status code nos diz se a requisicao foi bem sucedida ou nao
+
+**Status de Sucesso**
+
+- 200: Ok
+- 201: Created
+
+**Status de erro**
+
+- 400: Bad Resquest
+- 403: Forbidden
+- 404: Not found
