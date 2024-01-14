@@ -18,6 +18,14 @@ React é uma biblioteca js utilizada para criar interfaces interativas para o us
 
 - Frameworks (apos masterizar react) Next,Gastby,Remix
 
+## Como o React Funciona?
+
+Como o nome 'Diz' ele reage as interacoes do usuario (react)
+
+- Altera o Virtual DOM(copia do dom + leve)
+- Compara o Virtual DOM vs o DOM e faz as alteracoes com base nas diferencas entre os 2
+- Com o react a gente nao mexe com o DOM
+
 ## Vite
 
 Vite é bundler usadado para criar booleplate das nossas aplicações webs sem a necessidade de um compilador como webpack.
