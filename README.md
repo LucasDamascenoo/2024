@@ -10,7 +10,8 @@ Aqui vamos encontrar topicos como:
 
 - [Css/Sass](/css/css.md)
 - [Javascript](/js/js.md)
-- React
+- [VueJs](/vue/)
+- [React](/react/react.md)
 - Typescript
 - Tailwind
 - Mern
