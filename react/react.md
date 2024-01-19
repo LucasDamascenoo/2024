@@ -150,9 +150,29 @@ function App() {
 
 **Desestruturacao em props**
 
-- Tambem podemos usar uma sintaxe 'moderna' e mais clean para criarmos propriedades desestruturada
+- Tambem podemos usar uma sintaxe 'moderna' e mais clean criando props atraves da desestruturacao
 
 ```js:
+
+export const Button = ({text})=>{
+
+return
+  <button>{text}</button>
+
+}
+
+
+
+function App() {
+  return (
+<>
+      <Button texto="Aqui tem um texto do props" />
+      <Button texto="Aqui tem um outro texto do props" />
+
+</>
+  )
+
+}
 
 
 
