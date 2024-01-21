@@ -71,6 +71,14 @@ Temos duas formas de exportar componentes no react que são export default e exp
 - export default Post(nome do componentes)
 - export function Button (){}
 
+## Modularizacao dos componentes
+
+Por boas praticas nosso componentes devem ter uma pasta dedidica tal.
+
+Componentes > Button.jsx > card.jsx
+
+- Componentes devem ter apenas uma unica declaracao de funcao
+
 ## Fragment
 
 Fragment é uma forma de encapsular componentes sem criar um elemento na dom , diferente de quando fazer esse encapsulamento com uma div por exemplo, o dom cria essa div sem necessidade, criando um problema de semantica
@@ -218,3 +226,9 @@ Status code nos diz se a requisicao foi bem sucedida ou nao
 - 400: Bad Resquest
 - 403: Forbidden
 - 404: Not found
+
+## Hooks
+
+Os hooks ajuda o react entender quando tem alguma mudanca dinamicamente no nosso componentes para que cada mudanca( seja: estado ou no ciclo de vida dos componentes funcionais) ele redenrize
+
+- Hooks sao apis do React
