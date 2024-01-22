@@ -232,3 +232,14 @@ Status code nos diz se a requisicao foi bem sucedida ou nao
 Os hooks ajuda o react entender quando tem alguma mudanca dinamicamente no nosso componentes para que cada mudanca( seja: estado ou no ciclo de vida dos componentes funcionais) ele redenrize
 
 - Hooks sao apis do React
+
+## Hooks States
+
+Hooks states e um hook que nos permite rastrear o estado em um componentes
+
+```js:
+
+
+
+
+```
