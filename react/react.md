@@ -9,7 +9,7 @@ React é uma biblioteca js utilizada para criar interfaces interativas para o us
 
 ## Roadmap de aprendizado
 
-- Core of react
+- Core of react (jsx,componentes,props,estados,ciclos de vida,hooks,eventos,forms,)
 - Reutilização de componentes (props)
 - Como propagar mudanças (hooks)
 - State managent (react n possue) redux,redux tookit,content api
