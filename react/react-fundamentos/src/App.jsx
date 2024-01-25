@@ -1,8 +1,8 @@
-import { Button } from "./components/Button";
+import { Events } from "./components/Events";
 import { WelcomeText } from "./WelcomeText";
 
 export { react } from "react";
-export { Button } from "./components/Button";
+
 export { WelcomeText } from "./WelcomeText";
 
 function App() {
@@ -23,8 +23,8 @@ function App() {
           <li>{frut}</li>
         ))}
       </ul>
-      <Button text="soy um texto dinamico" />
-      <Button text="soy outro texto dinamico" />
+
+      <Events />
     </>
   );
 }
