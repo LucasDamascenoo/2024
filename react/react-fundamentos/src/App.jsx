@@ -1,3 +1,4 @@
+import { Button } from "./components/Button";
 import { Events } from "./components/Events";
 import { WelcomeText } from "./WelcomeText";
 
@@ -25,6 +26,7 @@ function App() {
       </ul>
 
       <Events />
+      <Button />
     </>
   );
 }

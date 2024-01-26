@@ -7,7 +7,7 @@ React é uma biblioteca js utilizada para criar interfaces interativas para o us
 - tv
 - realidade virtual
 
-## Roadmap de aprendizado
+# Roadmap de aprendizado
 
 - Core of react (jsx,componentes,props,estados,ciclos de vida,hooks,eventos,forms,)
 - Reutilização de componentes (props)
@@ -18,7 +18,7 @@ React é uma biblioteca js utilizada para criar interfaces interativas para o us
 
 - Frameworks (apos masterizar react) Next,Gastby,Remix
 
-## Como o React Funciona?
+# Como o React Funciona?
 
 Como o nome 'Diz' ele reage as interacoes do usuario (react)
 
@@ -50,7 +50,7 @@ Já a forma declarativa é focado em o que queremos, como por exemplo quando dam
 
 **Compre Leite: Por favor, compre leite**
 
-## Componentes
+# Componentes
 
 Componentes são pequenas partes, ou seja, dividmos a nossa aplicação em pedaços, que podem ser reutilizadas e repetidas diversas vezes em nossas aplicações, quando pensamos em reutilizacao de codigo, no HTML nao temos essa opcao, ja no css podemos considerar as classes e no Js as funcoes().
 
@@ -183,7 +183,6 @@ function App() {
 }
 
 
-
 ```
 
 ## Vida de um componentes
@@ -194,7 +193,7 @@ quando criamos componentes queremos que ele seja util, ou seja, continuemos usan
 - Desmontagem/destruição
 - Atualização
 
-## Como conectamos Front com o Back?
+# Como conectamos Front com o Back?
 
 O frontend conecta com o backend atraves de requisicoes/chamadas HTTP
 
@@ -227,19 +226,51 @@ Status code nos diz se a requisicao foi bem sucedida ou nao
 - 403: Forbidden
 - 404: Not found
 
+# States
+
+- Estados sao dados manipulados que reflete na aplicacao
+- Estados um objeto onde guardadamos os dados de um determinado componente
+
 ## Hooks
 
-Os hooks ajuda o react entender quando tem alguma mudanca dinamicamente no nosso componentes para que cada mudanca( seja: estado ou no ciclo de vida dos componentes funcionais) ele redenrize
+Os hooks ajuda o react entender quando tem alguma mudanca dinamicamente no nosso componentes para que cada mudanca( seja: estado ou no ciclo de vida dos componentes funcionais) seja redenrizado no react.
 
 - Hooks sao apis do React
+- Hooks precisam ser importados
+- Podemos criar nossos proprios Hooks (custom hook)
 
-## Hooks States
+## useStates
 
-Hooks states e um hook que nos permite rastrear o estado em um componentes
+- Utizado para gerenciar o estado de algum dado
+
+- Como parametro temos a variavel iniciadora e uma funcao que modifica o estado de inicio
+
+Hooks states e um hook que nos permite rastrear o estado em um componentes e altera-lo
 
 ```js:
 
+import { useState } from "react";
+
+export const Button = () => {
+  // let someData = 10;
+
+  const [number, setNumber] = useState(0);
+  return (
+    <>
+      <p>{number}</p>
+      <button onClick={() => setNumber(number + 1)}>Mudar Variavel</button>
+      <button onClick={() => setNumber(number + 1)}>Diminuir Variavel</button>
+    </>
+  );
+};
 
 
 
 ```
+
+- Criamos um variavel (useState) com valor inicial 0
+- Como podemos ver temos uma desestruturacao, com number e setNumber
+- Number: e a inicializacao do valor que vai redenrizado
+- SetNumber : a funcao que vai modificar a variavel iniciadora
+
+# Estilos
