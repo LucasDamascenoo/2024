@@ -1,5 +1,6 @@
 import { Button } from "./components/Button";
 import { Events } from "./components/Events";
+import { ListRender } from "./components/listRender";
 import { WelcomeText } from "./WelcomeText";
 
 export { react } from "react";
@@ -27,6 +28,7 @@ function App() {
 
       <Events />
       <Button />
+      <ListRender />
     </>
   );
 }

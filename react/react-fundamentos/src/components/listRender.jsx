@@ -5,7 +5,11 @@ export const ListRender = () => {
 
   return (
     <div>
-      <ul>{list.map}</ul>
+      <ul>
+        {list.map((item, i) => (
+          <li key={i}>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 };

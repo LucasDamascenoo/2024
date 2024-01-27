@@ -273,4 +273,10 @@ export const Button = () => {
 - Number: e a inicializacao do valor que vai redenrizado
 - SetNumber : a funcao que vai modificar a variavel iniciadora
 
-# Estilos
+# Iterar Listas no React
+
+## Key
+
+Quando iteramos uma lista de arrays sem as keys, o react nos dar um aviso que precisamos dessa propriedade
+
+- Key e a chave unica de cada iteracao que estamos fazendo naquela lista
