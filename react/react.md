@@ -115,7 +115,45 @@ function Hello () {
 
 **Obs: os mecanismo do Javascript nao sao capazes de interpretar o jsx, por isso precisamos de compiladores como (babel) para transformar nosso codigo jsx em algo que o navegador intenda**
 
-**Obs2: Hoje nao necessita quer os arquivos em react tenham a extensao .jsx pois o mecanismo do js ja intende que o jsx e a sintaxe nao a extensao**
+**Obs2: Hoje nao necessita quer os arquivos em react tenham a extensao .jsx pois o mecanismo do js ja intende que o jsx e a sintaxe nao a extensao**\
+
+## Expressions
+
+Nos permite executar javascrispt e expressoes dentro de {}
+
+```js:
+
+export const Teste = () => {
+
+const name = 'Lucas'
+
+return (
+
+<p>{name}</p>
+
+//retornando nossa variavel name no paragrafo que vai ser renderizado no componente
+
+)
+
+}
+
+
+```
+
+## Iterar Listas no React
+
+Podemos iterar listas com react utilizando o .map (ja vimos em js), a sintaxe muda de {} na chamada da funcao para (), mas o conceito e o mesmo.
+
+```js:
+
+
+```
+
+## Key
+
+Quando iteramos uma lista de arrays sem as keys, o react nos dar um aviso que precisamos dessa propriedade
+
+- Key e a chave unica de cada iteracao que estamos fazendo naquela lista
 
 ## Props
 
@@ -272,11 +310,3 @@ export const Button = () => {
 - Como podemos ver temos uma desestruturacao, com number e setNumber
 - Number: e a inicializacao do valor que vai redenrizado
 - SetNumber : a funcao que vai modificar a variavel iniciadora
-
-# Iterar Listas no React
-
-## Key
-
-Quando iteramos uma lista de arrays sem as keys, o react nos dar um aviso que precisamos dessa propriedade
-
-- Key e a chave unica de cada iteracao que estamos fazendo naquela lista
