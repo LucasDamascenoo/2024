@@ -146,6 +146,31 @@ Podemos iterar listas com react utilizando o .map (ja vimos em js), a sintaxe mu
 
 ```js:
 
+export const ListFruits  = () =>{
+
+const arrayFruits = ['banana','maca','uva']
+
+// iterando e incluindo as frutas em uma lista que sera redenrizada
+
+return (
+
+<ul>
+
+{arrayFruits.map((fruta) => (
+
+<li>{fruta}</li>
+
+
+  ))}
+
+</ul>
+
+
+)
+
+
+}
+
 
 ```
 
@@ -154,6 +179,43 @@ Podemos iterar listas com react utilizando o .map (ja vimos em js), a sintaxe mu
 Quando iteramos uma lista de arrays sem as keys, o react nos dar um aviso que precisamos dessa propriedade
 
 - Key e a chave unica de cada iteracao que estamos fazendo naquela lista
+
+- Podemos atribuir keys com ids de um futuro banco de dados, de um numero randon, ou utilizando o index (fruta,index)
+
+```js:
+
+export const ListFruits  = () =>{
+
+const arrayFruits = ['banana','maca','uva']
+
+// iterando e incluindo as frutas em uma lista que sera redenrizada
+
+return (
+
+<ul>
+
+{arrayFruits.map((fruta,index) => (
+
+<li key={index}>{fruta}</li>
+
+
+  ))}
+
+</ul>
+
+
+)
+
+
+}
+
+
+
+```
+
+## Redenrizacao condicional
+
+Redenriza um determinado componente baseado em uma certa condicao.
 
 ## Props
 
