@@ -1,15 +1,18 @@
-import { useState } from "react";
-
 export const ListRender = () => {
-  const [list] = useState(["maria", "jose", "jesus"]);
+  const data = [
+    { id: 1, name: "Lucas Oliveira", job: "Dados", email: "l.dados@gmail.com" },
+    {
+      id: 2,
+      name: "Tatiane Oliveira",
+      job: "Finaceiro",
+      email: "lt.financeiro@gmail.com",
+    },
+    { id: 3, name: "Bruce", job: "Dog", email: "dog@gmail.com" },
+  ];
 
   return (
-    <div>
-      <ul>
-        {list.map((item, i) => (
-          <li key={i}>{item}</li>
-        ))}
-      </ul>
-    </div>
+    <ul>
+      <ContactCard />
+    </ul>
   );
 };

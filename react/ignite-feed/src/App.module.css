@@ -1,0 +1,11 @@
+.wrapper {
+  max-width: 70rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  display: grid;
+  /* abaixo diz que o aside vai ter 256px de largura e a segunda coluna vai se adeptar para quanto couber na tela (1fr == tamanho flexivel)  */
+  grid-template-columns: 256px 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+}

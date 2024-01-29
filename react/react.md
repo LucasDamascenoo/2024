@@ -372,3 +372,18 @@ export const Button = () => {
 - Como podemos ver temos uma desestruturacao, com number e setNumber
 - Number: e a inicializacao do valor que vai redenrizado
 - SetNumber : a funcao que vai modificar a variavel iniciadora
+
+# Estilos
+
+## Css Modules
+
+Css Modules consiste em criar arquivos css de acordo com cada componentes e termos um css global para os estilos que se aplicam em tudo
+
+- Ajuda a criar classes unicas para nossas aplicacoes, fazendo com que em nossas aplicacoes nao tenha problemas com regras css iguais
+
+- Evita Criar nomes grandes para nossas classes
+
+## Css Global
+
+- Utilizado para estilos diversos e que outros componentes possam utilizar
+- Src/Index.css
