@@ -12,8 +12,8 @@ function App() {
       <div className={style.wrapper}>
         <Sidebar />
         <main>
-          <Post author={"Lucas Oliveira"} content={"teste do teste do teste"} />
-          <Post author={"Tatiane Oliveira"} content={"Ja foi comprar pao?"} />
+          <Post />
+          <Post />
         </main>
       </div>
     </div>

@@ -64,6 +64,12 @@ Componentes são pequenas partes, ou seja, dividmos a nossa aplicação em peda�
 
 **No react tbm temos os hooks que nos permite reutilizar a logica**
 
+## Como montar a estrutura de um componente
+
+- html
+- css
+-
+
 ## Formas de exportar Componentes
 
 Temos duas formas de exportar componentes no react que são export default e export named
@@ -281,6 +287,7 @@ function App() {
   )
 
 }
+
 
 
 ```

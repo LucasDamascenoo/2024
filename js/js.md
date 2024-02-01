@@ -252,6 +252,37 @@ Já com o set podemos modificar dados de datas
 
 - Js por padrão é sincrono ou seja, executa linha após linha onde aguarda a linha anterior para dar sequencia nas demais ( ou seja, se a lista 1 do código estiver sem erro e a 2 com, a 3 em diante não sera exibida/executada)
 
--
+- Js assincrono podemos executar + de um processo ao mesmo tempo sem a necessidade do primeiro ser concluido para ir para os demais
+
+- Js assincrono "mais usado" no backend ou na chamada de apis
+
+## HTTP
+
+- HTTP eh um protocolo de envio e recebimendto de dados na web
+
+- Cliente/servidor onde o cliente eh o usuario(browser) e o servidor eh onde esta o dados que estamos solicitando
+
+- Request eh o termo quando um usuario pede algo e o Response eh a resposta do servidor
+
+- Response(resposta) pode ser um HTML, css, js files, imgs ou mais comum que sao os Json ou xml
+
+### Fazendo Request
+
+- Ajax/XmlHtppRequest sao as formas originais de solicitar dados mas nos temos atuais fazemos de forma mais morderna com o Fetch API
+
+### HTTP Metodos
+
+- Get (recebe/recupera dados de um servidor)
+- Post (envia dados para um servidor)
+- Put e Patch (atualiza dados no servidor)
+- Delete (deleta dados de um servidor)
+
+### Status code
+
+- 100 (continue)
+- 200 (sucess) 200 sucess
+- 300 (redirects) 301 - resouce moved
+- 400 (client error) 400 bad request - 404 not found
+- 500 (sever error) 500 error on server
 
 # Trabalhando com Apis

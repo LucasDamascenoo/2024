@@ -41,7 +41,7 @@
 .profile span {
   font-size: 0.875rem;
   color: var(--gray-400);
-  line-height: ;
+  line-height: 1.5;
 }
 
 .sidebar footer a {
