@@ -246,15 +246,82 @@ Já com o set podemos modificar dados de datas
 
 - "Debugs" é o aposto, é procurar/investigar o código para evitar problemas e erros.
 
-##
-
 # Js Assincrono
 
-- Js por padrão é sincrono ou seja, executa linha após linha onde aguarda a linha anterior para dar sequencia nas demais ( ou seja, se a lista 1 do código estiver sem erro e a 2 com, a 3 em diante não sera exibida/executada)
+- Js por padrão é sincrono ou seja, executa linha após linha onde aguarda a linha anterior parar para dar sequencia nas demais ( ou seja, se a lista 1 do código estiver sem erro e a 2 com, a 3 em diante não sera exibida/executada)
 
 - Js assincrono podemos executar + de um processo ao mesmo tempo sem a necessidade do primeiro ser concluido para ir para os demais
 
 - Js assincrono "mais usado" no backend ou na chamada de apis
+
+## setTimeout e setInterval
+
+- Funcoes assincronas/eventos de tempo
+
+- setTimeout : executa uma funcao depois de esperar um tempo determinado de milisegundos
+
+- setInterval : executa uma funcao depois de esperar um tempo determinado mas repete a execucao da funcao continuamente
+
+```js:
+const fz = document.querySelector(".fz");
+const btn = document.querySelector(".btn-fz");
+
+function chanceFz() {
+  setTimeout(() => {
+    fz.style.fontSize = "6.25rem";
+  }, 3000);
+}
+
+btn.addEventListener("click", chanceFz);
+
+```
+
+No exemplo acima criamos uma funcao que aumenta o tamanho da fonte apos 3 segundo e adicionamos essa funcao em um evento de botao, ou seja, quando clicado vai executar essa funcao e apos 3 segs a fonte ira aumentar
+
+## Promises
+
+Promises(object) sao promesas da vida real ou seja esta esperando algo, essas promessas podem ser cumpridas como tambem podem ser quebradas(nao executada).
+
+- por padrao o js tem algumas funcoes que ja sao promises como o setIntervall
+- new promise eh o jeito de criamos uma promise "do zero"
+- as promises precisam de 2 argumentos (resolve e reject)
+
+Quando trabalhamos com promises podemos utilizar 3 parametros:
+
+- .then() : utilizado para chamar o resolv da promessa
+- .catch() : utilizado para chamar/informar o reject da promessa
+- .finally() : utilizado para executar qualquer coisa que esteja na promessa e que seja necessario rodar mesmo que nao tenha dado resolved ou rejected
+
+```js:
+
+function userGit() {
+  fetch("https://api.github.com/users/LucasDamascenoo")
+    .then((require) => {
+      require.json().then((data) => {
+        console.log(data);
+      });
+    })
+    .catch((err) => {
+      console.log("error", err);
+    });
+}
+
+userGit();
+
+
+```
+
+No exemplo acima criamos uma funcao que dentro tem um fetch(promessa) utilizado para chamar uma api
+
+- Primeiro then : criamos um then para a requisicao e passamos para um json(promessa)
+- Segundo then: criamos um outro then para ler os dados (ja em formado json) e lemos esses dados no console
+
+**_promises utilizando o then,catch e finally fica muito verboso pois criamos uma serie de .then.catch para cada cenarios por isso utilizamos asyn/await_**
+
+## Async/await
+
+- Async transforma em uma funcao assincrona
+- Await transforma a funcao uma promise
 
 ## HTTP
 
@@ -284,5 +351,3 @@ Já com o set podemos modificar dados de datas
 - 300 (redirects) 301 - resouce moved
 - 400 (client error) 400 bad request - 404 not found
 - 500 (sever error) 500 error on server
-
-# Trabalhando com Apis

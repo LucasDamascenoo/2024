@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+</head>
+
+<body>
+  <div id="name"></div>
+
+  <script>
+    // Seu nome
+    var nome = "Lucas Oliveira";
+
+    // Elemento HTML onde as letras serão exibidas
+    var elementoNome = document.getElementById('name');
+
+    // Índice para controlar qual letra será exibida
+    var indice = 0;
+
+    // Função que adiciona letras ao elemento a cada intervalo de tempo
+    function mostrarLetras() {
+      // Verifica se todas as letras foram exibidas
+      if (indice < nome.length) {
+        // Adiciona a próxima letra ao elemento
+        elementoNome.innerHTML += nome.charAt(indice);
+
+        // Incrementa o índice para a próxima letra
+        indice++;
+      }
+      // Se todas as letras foram exibidas, limpa o intervalo
+      else {
+        clearInterval(interval);
+      }
+    }
+
+    // Define o intervalo de tempo (em milissegundos)
+    var intervalo = 200; // Você pode ajustar este valor conforme desejado
+
+    // Configura o intervalo para chamar a função mostrarLetras repetidamente
+    var interval = setInterval(mostrarLetras, intervalo);
+  </script>
+</body>
+
+</html>
