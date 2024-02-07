@@ -323,6 +323,24 @@ No exemplo acima criamos uma funcao que dentro tem um fetch(promessa) utilizado 
 - Async transforma em uma funcao assincrona
 - Await transforma a funcao uma promise
 
+```js:
+
+async function greeting(){
+
+  let result = await displayGreeting()
+}
+
+greeting()
+
+```
+
+**_Mas e os tratamentos de erros?_**
+
+Para trabalhar com o sucesso e os erros de um bloco de codigo asyn/await vamos utilizar:
+
+- try : sucesso
+- catch : erro
+
 ## HTTP
 
 - HTTP eh um protocolo de envio e recebimendto de dados na web
